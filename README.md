@@ -23,6 +23,8 @@ In this demo, we are going learn how to upload code from our local computer to a
 
 ## ➡️ Step 1 - Setup IAM Roles
 
+A. First, create an IAM Role for EC2
+
 To create a role:
 
 1. Sign in to the AWS Management Console and open the IAM console at https://console.aws.amazon.com/iam/.
@@ -46,6 +48,17 @@ To create a role:
 ![Create-role-IAM-Global(9)](https://github.com/julien-muke/aws_codedeploy_using_github/assets/110755734/c808ff54-ff2f-416e-acfd-72052cc55c26)
 
 
+B. Second, create an IAM Role for CodeDeploy
+
+Let's follow the same steps as our first IAM Role, with a CodeDeploy use case:
+
+1. In the navigation pane of the console, choose Roles and then choose Create role.
+2. Choose AWS service as Trusted entity type
+3. Choose `CodeDeploy` as Use case
+4. Choose `AWSCodeDeployRole` policies to attach to your new role
+5. Enter Role name `CodeDeployRole`
+6. Click "Next" and save changes
 
 
+## ➡️ Step 2 - Setup EC2 as Deployment Server
 
