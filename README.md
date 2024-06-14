@@ -62,3 +62,31 @@ Let's follow the same steps as our first IAM Role, with a CodeDeploy use case:
 
 ## ➡️ Step 2 - Setup EC2 as Deployment Server
 
+To launch an instance:
+
+1. Open the Amazon EC2 console at https://console.aws.amazon.com/ec2/.
+2. In the navigation bar at the top of the screen, you can use the selected Region, or optionally select a Region that is closer to you.
+3. From the EC2 console dashboard, in the Launch instance pane, choose Launch instance.
+4. Under Name and tags, for Name, enter a descriptive name for your instance.
+5. Under Application and OS Images (Amazon Machine Image), Choose Quick Start, and then choose the operating system (OS) for your instance. For your first Linux instance, we recommend that you choose Amazon Linux.
+6. From Amazon Machine Image (AMI), select an AMI that is marked Free Tier eligible.
+7. Under Instance type, for Instance type, choose t2.micro, which is eligible for the Free Tier. In Regions where t2.micro is not available, t3.micro is eligible for the Free Tier.
+8. Under Key pair, for this demo choose Proceed without a key pair (Not recommended)
+9. Under Network settings, select "Create security group" then choose "Allow SSH traffic from" and "Allow HTTP traffic from the internet"
+10. Under Advanced details, select `EC2CodeDeployRole` that we created as IAM instance profile
+11. Allow tags in metadata by choosing "Enable"
+12. For User data, let's Upload a file with the user data
+
+```bash
+#!/bin/bash
+sudo yum -y update
+sudo yum -y install ruby
+sudo yum -y install wget
+cd /home/ec2-user
+wet https://aws-codedeploy-us-east-1.s3.amazonaws.com/latest/install
+sudo chmod +x ./install
+sudo ./install auto
+sudo yum install -y python-pip
+sudo pip install awscli
+```
+13. Click "Launch instance"
