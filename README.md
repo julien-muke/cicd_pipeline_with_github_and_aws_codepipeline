@@ -90,3 +90,6 @@ sudo yum install -y python-pip
 sudo pip install awscli
 ```
 13. Click "Launch instance"
+
+
+## ➡️ Step 3 - Setup CodeDeply Pipeline
