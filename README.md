@@ -8,20 +8,17 @@ In this demo, we are going learn how to create a CI/CD Pipeline that takes your 
 
 ## <a name="design">📐 Project Architecture</a>
 
-![Blank diagram-15](https://github.com/julien-muke/deploy-nextjs-s3-cloudfront-github-actions/assets/110755734/050c9219-ec93-44a4-8b74-8a4aa1881314)
+![CI_CD](https://github.com/julien-muke/aws_codedeploy_using_github/assets/110755734/cd6ed4f7-83f2-47c4-aa0a-af543e1493bc)
 
 
 ## <a name="steps">☑️ Steps</a>
 
-* Create a Create NextJS App
-* Push Source Code to GitHub
-* Create S3 Bucket
-* Setting permissions for website access
-* Upload the app to S3 Bucket
-* Create CloudFront Distribution
-* Integrate AWS with Github for Github Actions Workflow
-* Set up IAM roles to connect GitHub Actions to actions in AWS
-* Configuring OpenID Connect in Amazon Web Services
+* Setup IAM Roles
+* Setup EC2 as Deployment Server
+* Integrate GitHub as a source/repository
+* Setup application & Deployment Group
+* Setup CodeDeply Pipeline
+* Deploy Application on EC2 once the application is pushed to GitHub
 
 
-## ➡️ Step 1 - Create and configure a Next.js 13 app
+## ➡️ Step 1 - Setup IAM Roles
