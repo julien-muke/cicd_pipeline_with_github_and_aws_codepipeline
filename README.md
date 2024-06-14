@@ -27,4 +27,25 @@ To create a role:
 
 1. Sign in to the AWS Management Console and open the IAM console at https://console.aws.amazon.com/iam/.
 2. In the navigation pane of the console, choose Roles and then choose Create role.
-3. Choose AWS account role type.
+
+![Screenshot 2024-06-12 at 14 01 20](https://github.com/julien-muke/aws_codedeploy_using_github/assets/110755734/3857d445-8cec-4b19-9d7b-f416989c8667)
+
+3. Choose AWS service as Trusted entity type
+4. Choose EC2 as Use case
+
+![Create-role-IAM-Global(7)](https://github.com/julien-muke/aws_codedeploy_using_github/assets/110755734/fb258cba-4a77-4f4a-a4b2-4a86fd77c674)
+
+5. Choose `AmazonEC2RoleforAWSCodeDeploy` policies to attach to your new role
+
+![Create-role-IAM-Global(8)](https://github.com/julien-muke/aws_codedeploy_using_github/assets/110755734/161503e6-d0c3-4f74-8bc0-a97872fad9e7)
+
+6. Enter Role name `EC2CodeDeployRole`
+7. You will see a Trust policy already attached to you role
+8. You will see the Permissions policy already attached to you role
+
+![Create-role-IAM-Global(9)](https://github.com/julien-muke/aws_codedeploy_using_github/assets/110755734/c808ff54-ff2f-416e-acfd-72052cc55c26)
+
+
+
+
+
