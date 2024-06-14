@@ -22,3 +22,9 @@ In this demo, we are going learn how to upload code from our local computer to a
 
 
 ## ➡️ Step 1 - Setup IAM Roles
+
+To create a role:
+
+1. Sign in to the AWS Management Console and open the IAM console at https://console.aws.amazon.com/iam/.
+2. In the navigation pane of the console, choose Roles and then choose Create role.
+3. Choose AWS account role type.
