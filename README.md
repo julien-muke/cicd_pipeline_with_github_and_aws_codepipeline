@@ -1,4 +1,4 @@
-# ![aws](https://github.com/julien-muke/Search-Engine-Website-using-AWS/assets/110755734/01cd6124-8014-4baa-a5fe-bd227844d263)     CI/CD Pipeline form GitHub to AWS EC2.
+# ![aws](https://github.com/julien-muke/Search-Engine-Website-using-AWS/assets/110755734/01cd6124-8014-4baa-a5fe-bd227844d263)     CI/CD Pipeline form GitHub to AWS EC2
 
 
 ## <a name="introduction">🤖 Introduction</a>
@@ -18,7 +18,7 @@ In this demo, we are going learn how to create a CI/CD Pipeline that takes your 
 * Integrate GitHub as a source/repository
 * Setup application & Deployment Group
 * Setup CodeDeply Pipeline
-* Deploy Application on EC2 once the application is pushed to GitHub
+* Deploy Application on EC2 once the code is in GitHub it automatically triggers a code pipeline to take that code and deploy it on EC2 using Code deploy.
 
 
 ## ➡️ Step 1 - Setup IAM Roles
