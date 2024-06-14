@@ -3,7 +3,7 @@
 
 ## <a name="introduction">🤖 Introduction</a>
 
-In this demo, we are going learn how to create a CI/CD Pipeline that takes your code from your local computer and automatically deploy on an EC2 Instance in AWS.
+In this demo, we are going learn how to upload code from our local computer to a remote repository in GitHub. Once the code is in GitHub it automatically triggers a code pipeline to take that code and deploy it on our AWS EC2 using CodeDeploy.
 
 
 ## <a name="design">📐 Project Architecture</a>
