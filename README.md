@@ -17,7 +17,7 @@ In this demo, we are going learn how to upload code from our local computer to a
 * Setup EC2 as Deployment Server
 * Integrate GitHub as a source/repository
 * Setup application & Deployment Group
-* Setup CodeDeply Pipeline
+* Setup CodeDeploy Pipeline
 * Deploy Application on EC2 once the code is in GitHub it automatically triggers a code pipeline to take that code and deploy it on EC2 using Code deploy.
 
 
@@ -136,9 +136,6 @@ To create an application for an in-place deployment using the CodeDeploy console
 ![deploymentgroup](https://github.com/julien-muke/aws_codedeploy_using_github/assets/110755734/b75e9bfe-c92a-44b6-b408-951b34dd5534)
 
 8. In Deployment group name, enter a name that describes the deployment group `MyApp-deployment-group`
-
-![Create-deployment-group-CodeDeploy-us-east-1](https://github.com/julien-muke/aws_codedeploy_using_github/assets/110755734/5351cbfc-ba6f-46c3-b3e0-4d1f6660c118)
-
 9. In Service role, choose a service role that grants CodeDeploy access to your target instance, the one that we created
 10. In Deployment type, choose In-place.
 11. In Environment configuration, select Amazon EC2 instances
@@ -146,4 +143,66 @@ To create an application for an in-place deployment using the CodeDeploy console
 13. In Deployment settings, choose a deployment configuration to control the rate your application is deployed to instances, such as all at once.
 14. Uncheck Enable load balancing
 15. Choose Create deployment group
+
+![Create-deployment-group-CodeDeploy-us-east-1](https://github.com/julien-muke/aws_codedeploy_using_github/assets/110755734/5351cbfc-ba6f-46c3-b3e0-4d1f6660c118)
+
+
+## ➡️ Step 4 - Create a pipeline in CodePipeline
+
+1. Sign in to the AWS Management Console and open the CodePipeline console at http://console.aws.amazon.com/codesuite/codepipeline/home.
+2. On the Welcome page, choose Create pipeline. 
+
+![CodePipeline1](https://github.com/julien-muke/aws_codedeploy_using_github/assets/110755734/1f947856-4b02-4636-86b3-d91714463322)
+
+NOTE: To create a pipeline in the console, you must provide the source file location and information about the providers you will use for your actions.
+
+I have uploaded in this repository, all the requided files for this demo, where we have `index.html` (source file) `appspec.yml` (where we give
+the instruction to the deployment) and `scripts` ( where we install dependencies)
+
+3. In Pipeline name, enter the name for your pipeline 
+4. In Pipeline type, choose V2 type pipelines
+5. In Service role, Choose New service role to allow CodePipeline to create a new service role in IAM.
+6. Choose Next
+
+![Create-new-pipeline-CodePipeline-us-east-1 (2)](https://github.com/julien-muke/aws_codedeploy_using_github/assets/110755734/84fbcd48-37d2-4235-9e43-ab81714c2892)
+
+7. Next, lets' Add the source stage, if it's your first time to add a source stage with a third-party provider such as GitHub, there are few connections you need to make first.
+
+NOTE: To add a source action for your GitHub or GitHub Enterprise Cloud repository in CodePipeline, Use the CodePipeline console Create pipeline wizard or Edit action page to choose the GitHub (Version 2) provider option. See Create a connection to GitHub Enterprise Server (console) to add the action. The console helps you create a connections resource.
+
+##  	:octocat: :octocat: Create a connection to GitHub (console)
+
+Before you begin:
+   <br>* You must have created an account with GitHub.
+   <br>* You must have already created a GitHub code repository.
+
+1. Choose to create a pipeline. Follow the steps in Create a Pipeline to complete the first screen and choose Next. On the Source page, under Source Provider, choose GitHub (Version 2).
+2. Under Connection, if you have not already created a connection to your provider, choose Connect to GitHub. Proceed to Step 2: Create a Connection to GitHub.
+
+![Screenshot 2024-06-15 at 12 48 08](https://github.com/julien-muke/aws_codedeploy_using_github/assets/110755734/2070e82c-3d11-4c98-a16b-c14668741437)
+
+3. After you choose to create the connection, the Connect to GitHub page appears.
+
+![GitHub1](https://github.com/julien-muke/aws_codedeploy_using_github/assets/110755734/8f257dbe-7942-4e4f-bbee-4768ca0e9a91)
+
+4. Under GitHub Apps, choose an app installation or choose Install a new app to create one.
+
+![GitHub2](https://github.com/julien-muke/aws_codedeploy_using_github/assets/110755734/4a88cf73-39cc-4a75-84b9-e836a065d640)
+
+5. On the Install AWS Connector for GitHub page, choose the account where you want to install the app.
+6. In Repository name, choose the name of your third-party repository my is `aws_codedeploy_using_github` where all my files are saved.
+7. Choose Save.
+
+![github3](https://github.com/julien-muke/aws_codedeploy_using_github/assets/110755734/adb0540d-81a8-43c4-98ff-a392fef72488)
+
+
+
+
+
+
+
+
+
+![Create-new-pipeline-CodePipeline-us-east-1 (3)](https://github.com/julien-muke/aws_codedeploy_using_github/assets/110755734/e9719b06-cd2d-4576-8aa0-a3f094b37df8)
+
 
