@@ -251,7 +251,7 @@ Next, let's go to our EC2 Instance and test the deployment
 
 ![code](https://github.com/julien-muke/aws_codedeploy_using_github/assets/110755734/67fb21ad-4981-4676-a262-d5f086245a5f)
 
-2. Once you push your code to GitHub it will automatically trigger a code pipeline and deploy it on our AWS EC2 using CodeDeploy and update the changes.
+2. As soon as you push your code to GitHub it will automatically trigger a code pipeline and deploy it on our AWS EC2 using CodeDeploy and update the changes.
 
 ![test2](https://github.com/julien-muke/aws_codedeploy_using_github/assets/110755734/3760580d-ead2-4f98-8a3c-cbf9466932ed)
 
