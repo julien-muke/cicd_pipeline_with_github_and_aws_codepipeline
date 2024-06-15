@@ -126,6 +126,11 @@ To create an application for an in-place deployment using the CodeDeploy console
 ![codedeploy1](https://github.com/julien-muke/aws_codedeploy_using_github/assets/110755734/30e4cab2-b710-4676-b2fe-6aa305da47d9)
 
 4. In Application name, enter the name of your application `MyApp`
-5. From Compute Platform, choose EC2/On-premises.
+5. From Compute Platform, choose EC2/On-premises
+6. Choose Create application
 
 ![codedeploy2](https://github.com/julien-muke/aws_codedeploy_using_github/assets/110755734/b0bcc73a-5586-433b-a143-f84bc18c3a66)
+
+7. On your application page, from the Deployment groups tab, choose Create deployment group
+
+![deploymentgroup](https://github.com/julien-muke/aws_codedeploy_using_github/assets/110755734/b75e9bfe-c92a-44b6-b408-951b34dd5534)
