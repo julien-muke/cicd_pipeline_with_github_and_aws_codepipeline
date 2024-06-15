@@ -66,7 +66,11 @@ To launch an instance:
 
 1. Open the Amazon EC2 console at https://console.aws.amazon.com/ec2/.
 2. In the navigation bar at the top of the screen, you can use the selected Region, or optionally select a Region that is closer to you.
-3. From the EC2 console dashboard, in the Launch instance pane, choose Launch instance.
+3. From the EC2 console dashboard, in the Launch instance pane, choose `Launch instance`.
+
+<img width="557" alt="1" src="https://github.com/julien-muke/aws_codedeploy_using_github/assets/110755734/c0667b1a-c639-4c99-86b9-b013531f5d3a">
+
+
 4. Under Name and tags, for Name, enter a descriptive name for your instance.
 5. Under Application and OS Images (Amazon Machine Image), Choose Quick Start, and then choose the operating system (OS) for your instance. For your first Linux instance, we recommend that you choose Amazon Linux.
 6. From Amazon Machine Image (AMI), select an AMI that is marked Free Tier eligible.
