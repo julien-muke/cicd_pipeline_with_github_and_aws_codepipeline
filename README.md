@@ -71,15 +71,31 @@ To launch an instance:
 ![Launch instance](https://github.com/julien-muke/aws_codedeploy_using_github/assets/110755734/c0667b1a-c639-4c99-86b9-b013531f5d3a)
 
 
-4. Under Name and tags, for Name, enter a descriptive name for your instance.
+4. Under Name and tags, for Name, enter a descriptive name for your instance, i will name it `MyInstance`
 5. Under Application and OS Images (Amazon Machine Image), Choose Quick Start, and then choose the operating system (OS) for your instance. For your first Linux instance, we recommend that you choose Amazon Linux.
 6. From Amazon Machine Image (AMI), select an AMI that is marked Free Tier eligible.
+
+![Screenshot 2024-06-15 at 09 30 48](https://github.com/julien-muke/aws_codedeploy_using_github/assets/110755734/b1ec0133-b693-44bd-92d9-81e2f71d151c)
+
+
 7. Under Instance type, for Instance type, choose t2.micro, which is eligible for the Free Tier. In Regions where t2.micro is not available, t3.micro is eligible for the Free Tier.
 8. Under Key pair, for this demo choose Proceed without a key pair (Not recommended)
+
+![Launch instance2](https://github.com/julien-muke/aws_codedeploy_using_github/assets/110755734/38fa9920-af55-4dbe-b825-6182669b16d3)
+
+
 9. Under Network settings, select "Create security group" then choose "Allow SSH traffic from" and "Allow HTTP traffic from the internet"
+
+![Launch instance3](https://github.com/julien-muke/aws_codedeploy_using_github/assets/110755734/3f50379b-0ecc-48ff-aad9-fee9e72b4440)
+
+
 10. Under Advanced details, select `EC2CodeDeployRole` that we created as IAM instance profile
+
+![Launch instance4](https://github.com/julien-muke/aws_codedeploy_using_github/assets/110755734/79fa95b3-eaeb-45fb-bec7-7e450b3a9b26)
+
+
 11. Allow tags in metadata by choosing "Enable"
-12. For User data, let's Upload a file with the user data
+12. For User data, let's Upload a file with the user data, copy and paste file below:
 
 ```bash
 #!/bin/bash
@@ -93,6 +109,9 @@ sudo ./install auto
 sudo yum install -y python-pip
 sudo pip install awscli
 ```
+
+![Launch instance5](https://github.com/julien-muke/aws_codedeploy_using_github/assets/110755734/37625a17-e3fc-4e17-ae66-d83c13fece58)
+
 13. Click "Launch instance"
 
 
