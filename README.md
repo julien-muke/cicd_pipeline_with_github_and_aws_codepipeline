@@ -68,7 +68,7 @@ To launch an instance:
 2. In the navigation bar at the top of the screen, you can use the selected Region, or optionally select a Region that is closer to you.
 3. From the EC2 console dashboard, in the Launch instance pane, choose `Launch instance`.
 
-<img width="557" alt="1" src="https://github.com/julien-muke/aws_codedeploy_using_github/assets/110755734/c0667b1a-c639-4c99-86b9-b013531f5d3a">
+![Launch instance](https://github.com/julien-muke/aws_codedeploy_using_github/assets/110755734/c0667b1a-c639-4c99-86b9-b013531f5d3a)
 
 
 4. Under Name and tags, for Name, enter a descriptive name for your instance.
