@@ -15,10 +15,10 @@ In this demo, we are going learn how to upload code from our local computer to a
 
 * Setup IAM Roles
 * Setup EC2 as Deployment Server
-* Integrate GitHub as a source/repository
-* Setup application & Deployment Group
 * Setup CodeDeploy Pipeline
-* Deploy Application on EC2 once the code is in GitHub it automatically triggers a code pipeline to take that code and deploy it on EC2 using Code deploy.
+* Setup application & Deployment Group
+* Integrate GitHub as a source/repository
+* Deploy Application on EC2 once the code is push GitHub it automatically triggers a code pipeline to take that code and deploy it on EC2 using Code deploy.
 
 
 ## ➡️ Step 1 - Setup IAM Roles
