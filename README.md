@@ -238,7 +238,8 @@ Next, let's go to our EC2 Instance and test the deployment
 2. choose `MyInstance`
 3. Scroll down, under details copy the Public IPv4 DNS, open a new tab and paste it the your browser.
 
-![instance1](https://github.com/julien-muke/aws_codedeploy_using_github/assets/110755734/54843cd2-d63f-45d9-9824-89a0863dd22c)
+![instance3w](https://github.com/julien-muke/aws_codedeploy_using_github/assets/110755734/f4d482ef-38bd-4cd7-b3c4-f853031947de)
+
 
 4. As you see our website has been successfully deployment on AWS EC2.
 
