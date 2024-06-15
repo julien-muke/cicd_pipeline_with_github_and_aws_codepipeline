@@ -256,3 +256,5 @@ Next, let's go to our EC2 Instance and test the deployment
 ![test2](https://github.com/julien-muke/aws_codedeploy_using_github/assets/110755734/3760580d-ead2-4f98-8a3c-cbf9466932ed)
 
 
+## 💰 Cost
+All services used are eligible for the AWS Free Tier. However, charges will incur at some point so it's recommended that you shut down resources after completing this tutorial.
