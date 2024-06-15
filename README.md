@@ -134,3 +134,16 @@ To create an application for an in-place deployment using the CodeDeploy console
 7. On your application page, from the Deployment groups tab, choose Create deployment group
 
 ![deploymentgroup](https://github.com/julien-muke/aws_codedeploy_using_github/assets/110755734/b75e9bfe-c92a-44b6-b408-951b34dd5534)
+
+8. In Deployment group name, enter a name that describes the deployment group `MyApp-deployment-group`
+
+![Create-deployment-group-CodeDeploy-us-east-1](https://github.com/julien-muke/aws_codedeploy_using_github/assets/110755734/5351cbfc-ba6f-46c3-b3e0-4d1f6660c118)
+
+9. In Service role, choose a service role that grants CodeDeploy access to your target instance, the one that we created
+10. In Deployment type, choose In-place.
+11. In Environment configuration, select Amazon EC2 instances
+12. In the Key and Value fields, enter Name as key and MyInstance as value
+13. In Deployment settings, choose a deployment configuration to control the rate your application is deployed to instances, such as all at once.
+14. Uncheck Enable load balancing
+15. Choose Create deployment group
+
