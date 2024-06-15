@@ -170,14 +170,14 @@ the instruction to the deployment) and `scripts` ( where we install dependencies
 
 NOTE: To add a source action for your GitHub or GitHub Enterprise Cloud repository in CodePipeline, Use the CodePipeline console Create pipeline wizard or Edit action page to choose the GitHub (Version 2) provider option. See Create a connection to GitHub Enterprise Server (console) to add the action. The console helps you create a connections resource.
 
-##  	:octocat: :octocat: Create a connection to GitHub (console)
+## :octocat: Create a connection to GitHub (console)
 
 Before you begin:
    <br>* You must have created an account with GitHub.
    <br>* You must have already created a GitHub code repository.
 
 1. Choose to create a pipeline. Follow the steps in Create a Pipeline to complete the first screen and choose Next. On the Source page, under Source Provider, choose GitHub (Version 2).
-2. Under Connection, if you have not already created a connection to your provider, choose Connect to GitHub. Proceed to Step 2: Create a Connection to GitHub.
+2. Under Connection, if you have not already created a connection to your provider, choose Connect to GitHub.
 
 ![Screenshot 2024-06-15 at 12 48 08](https://github.com/julien-muke/aws_codedeploy_using_github/assets/110755734/2070e82c-3d11-4c98-a16b-c14668741437)
 
