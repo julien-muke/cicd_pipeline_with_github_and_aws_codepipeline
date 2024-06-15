@@ -195,14 +195,41 @@ Before you begin:
 
 ![github3](https://github.com/julien-muke/aws_codedeploy_using_github/assets/110755734/adb0540d-81a8-43c4-98ff-a392fef72488)
 
+8. Choose a repository in your GitHub account.
+9. Choose `main` as Default branch
+10. For Output artifact format, choose `CodePipeline default`
+11. For Trigger type, choose No trigger, then click Next
+
+![Create-new-pipeline-CodePipeline-us-east-1 (3)](https://github.com/julien-muke/aws_codedeploy_using_github/assets/110755734/67814307-1b39-4f1b-abf2-a9d80ce1448d)
 
 
+12. Under Add build stage, since our deployment will be automatically made as soon as we push the source code, choose Skip build stage.
+
+![build1](https://github.com/julien-muke/aws_codedeploy_using_github/assets/110755734/7bd7537f-1b90-46d1-ac28-bb6115c2d5db)
+
+13. Uner deploy stage, for Deploy provider choose `AWS CodeDeploy`
+14. For Region US East (N. Virginia) or which ever region is close to you.
+15. Enter the application name `MyApp`
+16. For Deployment group, choose `MyApp-deployment-group` that we created, then click Next.
+
+![build2](https://github.com/julien-muke/aws_codedeploy_using_github/assets/110755734/d1a82af0-8195-4d38-9d2f-3cb120b4254c)
+
+17. Review page, review your pipeline configuration, and then choose Create pipeline to create the pipeline.
 
 
+## ➡️ Step 5 - View and test AWS CodePipeline
+
+The Pipelines page displays a list of all your pipelines for that Region are shown.
+
+The name, type, status, version, creation date, and date when last modified of all pipelines associated with your AWS account are displayed, along with the most recently started execution time.
+
+To view pipelines, Choose View details next to a specific row to display a details dialog box listing the most recent executions.
+
+![viewpipeline1](https://github.com/julien-muke/aws_codedeploy_using_github/assets/110755734/8c4e8a9f-6dfe-43ea-8baf-4de1cdaee1ea)
 
 
+A detailed view of the pipeline, including the state of each action in each stage and the state of the transitions, is displayed.
 
-
-![Create-new-pipeline-CodePipeline-us-east-1 (3)](https://github.com/julien-muke/aws_codedeploy_using_github/assets/110755734/e9719b06-cd2d-4576-8aa0-a3f094b37df8)
+![myApplication_pipeline-CodePipeline-us-east-1 (1)](https://github.com/julien-muke/aws_codedeploy_using_github/assets/110755734/ad4b5eb8-ca69-492e-8fa4-58f77e00986d)
 
 
