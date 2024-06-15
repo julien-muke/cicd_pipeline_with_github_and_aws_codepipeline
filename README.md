@@ -240,7 +240,7 @@ Next, let's go to our EC2 Instance and test the deployment
 
 ![instance1](https://github.com/julien-muke/aws_codedeploy_using_github/assets/110755734/54843cd2-d63f-45d9-9824-89a0863dd22c)
 
-4. As you see our website has been successfully deployment on AWS EC2
+4. As you see our website has been successfully deployment on AWS EC2.
 
 ![site](https://github.com/julien-muke/aws_codedeploy_using_github/assets/110755734/e2562cb6-ab33-4897-aded-ab1ba7c3a1ec)
 
