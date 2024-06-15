@@ -236,22 +236,22 @@ Next, let's go to our EC2 Instance and test the deployment
 
 1. Back to EC2 console, filter the running instance that we created
 2. choose `MyInstance`
-3. Scroll down, under details copy the Public IPv4 DNS, open a new tab and paste it the your browser.
+3. Scroll down, under details copy the Public IPv4 DNS, open a new tab and paste it in your browser.
 
 ![instance3w](https://github.com/julien-muke/aws_codedeploy_using_github/assets/110755734/f4d482ef-38bd-4cd7-b3c4-f853031947de)
 
 
-4. As you see our website has been successfully deployment on AWS EC2.
+4. As you can see our website has been successfully deployed on AWS EC2.
 
 ![site](https://github.com/julien-muke/aws_codedeploy_using_github/assets/110755734/e2562cb6-ab33-4897-aded-ab1ba7c3a1ec)
 
 ## Let's test our CI/CD Pipeline
 
-1. Go to your code files and edit something, i'm going to add `WOW` before congratilation
+1. Go to your code files and edit something, i'm going to add `WOW` before congratilations
 
 ![code](https://github.com/julien-muke/aws_codedeploy_using_github/assets/110755734/67fb21ad-4981-4676-a262-d5f086245a5f)
 
-2. Once you push your code to GitHub it will automatically trigger a code pipeline and deploy it on our AWS EC2 using CodeDeploy, as we showed above.
+2. Once you push your code to GitHub it will automatically trigger a code pipeline and deploy it on our AWS EC2 using CodeDeploy and update the changes.
 
 ![test2](https://github.com/julien-muke/aws_codedeploy_using_github/assets/110755734/3760580d-ead2-4f98-8a3c-cbf9466932ed)
 
