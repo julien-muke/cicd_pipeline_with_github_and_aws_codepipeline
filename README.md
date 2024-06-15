@@ -79,7 +79,7 @@ To launch an instance:
 
 
 7. Under Instance type, for Instance type, choose t2.micro, which is eligible for the Free Tier. In Regions where t2.micro is not available, t3.micro is eligible for the Free Tier.
-8. Under Key pair, for this demo choose Proceed without a key pair (Not recommended)
+8. Under Key pair, for this demo choose Proceed without a key pair.
 
 ![Launch instance2](https://github.com/julien-muke/aws_codedeploy_using_github/assets/110755734/38fa9920-af55-4dbe-b825-6182669b16d3)
 
@@ -157,7 +157,7 @@ To create an application for an in-place deployment using the CodeDeploy console
 NOTE: To create a pipeline in the console, you must provide the source file location and information about the providers you will use for your actions.
 
 I have uploaded in this repository, all the requided files for this demo, where we have `index.html` (source file) `appspec.yml` (where we give
-the instruction to the deployment) and `scripts` ( where we install dependencies)
+the instruction to the deployment) and `scripts` ( where we install all dependencies)
 
 3. In Pipeline name, enter the name for your pipeline 
 4. In Pipeline type, choose V2 type pipelines
@@ -166,7 +166,7 @@ the instruction to the deployment) and `scripts` ( where we install dependencies
 
 ![Create-new-pipeline-CodePipeline-us-east-1 (2)](https://github.com/julien-muke/aws_codedeploy_using_github/assets/110755734/84fbcd48-37d2-4235-9e43-ab81714c2892)
 
-7. Next, lets' Add the source stage, if it's your first time to add a source stage with a third-party provider such as GitHub, there are few connections you need to make first.
+7. Next, lets' Add the source stage, if it's your first time to add a source stage with a third-party provider such as GitHub, there are few configurations you need to make first.
 
 NOTE: To add a source action for your GitHub or GitHub Enterprise Cloud repository in CodePipeline, Use the CodePipeline console Create pipeline wizard or Edit action page to choose the GitHub (Version 2) provider option. See Create a connection to GitHub Enterprise Server (console) to add the action. The console helps you create a connections resource.
 
