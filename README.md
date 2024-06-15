@@ -168,13 +168,11 @@ the instruction to the deployment) and `scripts` ( where we install all dependen
 
 7. Next, lets' Add the source stage, if it's your first time to add a source stage with a third-party provider such as GitHub, there are few configurations you need to make first.
 
-NOTE: To add a source action for your GitHub or GitHub Enterprise Cloud repository in CodePipeline, Use the CodePipeline console Create pipeline wizard or Edit action page to choose the GitHub (Version 2) provider option. See Create a connection to GitHub Enterprise Server (console) to add the action. The console helps you create a connections resource.
-
 ## :octocat: Create a connection to GitHub (console)
 
 Before you begin:
    <br>* You must have created an account with GitHub.
-   <br>* You must have already created a GitHub code repository.
+   <br>* You must have already created a GitHub code repository with all the code uploaded (check the code above).
 
 1. Choose to create a pipeline. Follow the steps in Create a Pipeline to complete the first screen and choose Next. On the Source page, under Source Provider, choose GitHub (Version 2).
 2. Under Connection, if you have not already created a connection to your provider, choose Connect to GitHub.
