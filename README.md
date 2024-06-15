@@ -116,3 +116,16 @@ sudo pip install awscli
 
 
 ## ➡️ Step 3 - Setup CodeDeply Pipeline
+
+To create an application for an in-place deployment using the CodeDeploy console:
+
+1. Sign in to the AWS Management Console and open the CodeDeploy console at https://console.aws.amazon.com/codedeploy.
+2. In the navigation pane, expand Deploy, and then choose Getting started.
+3. Choose Create application
+
+![codedeploy1](https://github.com/julien-muke/aws_codedeploy_using_github/assets/110755734/30e4cab2-b710-4676-b2fe-6aa305da47d9)
+
+4. In Application name, enter the name of your application `MyApp`
+5. From Compute Platform, choose EC2/On-premises.
+
+![codedeploy2](https://github.com/julien-muke/aws_codedeploy_using_github/assets/110755734/b0bcc73a-5586-433b-a143-f84bc18c3a66)
