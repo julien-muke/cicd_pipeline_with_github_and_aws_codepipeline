@@ -1,12 +1,12 @@
-# ![aws](https://github.com/julien-muke/Search-Engine-Website-using-AWS/assets/110755734/01cd6124-8014-4baa-a5fe-bd227844d263)     CI/CD Pipeline form GitHub to AWS EC2
+# ![aws](https://github.com/julien-muke/Search-Engine-Website-using-AWS/assets/110755734/01cd6124-8014-4baa-a5fe-bd227844d263)     Build a CI/CD Pipeline with GitHub and AWS CodePipeline
 
 
 ## <a name="introduction">🤖 Introduction</a>
 
-In this demo, we are going learn how to upload code from our local computer to a remote repository in GitHub. Once the code is in GitHub it automatically triggers a code pipeline to take that code and deploy it on our AWS EC2 using CodeDeploy.
+🚀 Want to streamline your deployments and automate your workflow like a pro? In this tutorial, I’ll show you how to build a CI/CD pipeline using GitHub and AWS CodePipeline, ensuring your applications are deployed efficiently and reliably!
 
 
-## <a name="design">📐 Project Architecture</a>
+## <a name="design">📐 Architecture diagram</a>
 
 ![CI_CD](https://github.com/julien-muke/aws_codedeploy_using_github/assets/110755734/cd6ed4f7-83f2-47c4-aa0a-af543e1493bc)
 
