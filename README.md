@@ -20,6 +20,18 @@
 * Integrate GitHub as a source/repository
 * Deploy Application on EC2 once the code is push GitHub it automatically triggers a code pipeline to take that code and deploy it on EC2 using Code deploy.
 
+## :octocat: Clone GitHub repository
+
+Clone the example repository for this tutorial, which contains the Node.js Application.
+
+```bash
+git clone https://github.com/julien-muke/cicd_pipeline_sample.git
+```
+Change into the repository directory
+
+```bash
+cd cicd_pipeline_sample
+```
 
 ## ➡️ Step 1 - Setup IAM Roles
 
