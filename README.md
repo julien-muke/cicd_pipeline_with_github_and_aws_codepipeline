@@ -8,11 +8,12 @@
 
 ## <a name="design">📐 Architecture diagram</a>
 
-![CI_CD](https://github.com/julien-muke/aws_codedeploy_using_github/assets/110755734/cd6ed4f7-83f2-47c4-aa0a-af543e1493bc)
+![Image](https://github.com/user-attachments/assets/04c165b5-5be7-42fc-b092-ac2a15f524c8)
 
 
 ## <a name="steps">☑️ Steps</a>
 
+* Setting Up the GitHub Repository
 * Setup IAM Roles
 * Setup EC2 as Deployment Server
 * Setup CodeDeploy Pipeline
